@@ -1,0 +1,81 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediTu - The Student Feedback Platform</title>
+    <!-- link to css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <div class="container">
+        <h1>MediTu</h1>
+        <p>The Student Feedback Platform</p>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <div class="container">
+        <!-- kanban board section -->
+        <section id="board">
+          <!-- columns for feedback statuses -->
+          <div class="column" id="new">
+            <h2>New</h2>
+            <!-- list of feedback cards -->
+            <ul class="card-list"></ul>
+          </div>
+
+          <div class="column" id="in-progress">
+            <h2>In Progress</h2>
+            <!-- list of feedback cards -->
+            <ul class="card-list"></ul>
+          </div>
+
+          <div class="column" id="resolved">
+            <h2>Resolved</h2>
+            <!-- list of feedback cards -->
+            <ul class="card-list"></ul>
+          </div>
+        </section>
+
+        <!-- form section to add new feedback -->
+        <section id="form">
+          <!-- form element to submit new feedback -->
+          <form id="feedback-form">
+            <!-- input element for feedback title -->
+            <input
+              type="text"
+              id="feedback-title"
+              placeholder="Enter feedback title..."
+              required
+            />
+
+            <!-- input element for feedback description -->
+            <textarea
+              id="feedback-description"
+              placeholder="Enter feedback description..."
+              required
+            ></textarea>
+
+            <!-- button element to submit new feedback -->
+            <button type="submit" id="submit-button">Submit Feedback</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+      <div class="container">
+        <p>© 2023 MediTu Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- link to javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
